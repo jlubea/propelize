@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_wand</ProjectName>
+    <ProjectGuid>{6DECE067-088A-499C-B177-E650547D24B1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Release\CORE_wand\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\Release\CORE_wand\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Debug\CORE_wand\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\Debug\CORE_wand\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\wand;..\..\wand\.svn;..\..\wand\.svn\prop-base;..\..\wand\.svn\props;..\..\wand\.svn\text-base;..\..\wand\.svn\tmp;..\..\wand\.svn\tmp\prop-base;..\..\wand\.svn\tmp\props;..\..\wand\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;_MAGICKLIB_;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_RL_wand_.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\wand;..\..\wand\.svn;..\..\wand\.svn\prop-base;..\..\wand\.svn\props;..\..\wand\.svn\text-base;..\..\wand\.svn\tmp;..\..\wand\.svn\tmp\prop-base;..\..\wand\.svn\tmp\props;..\..\wand\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;_MAGICKLIB_;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_RL_wand_.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\wand;..\..\wand\.svn;..\..\wand\.svn\prop-base;..\..\wand\.svn\props;..\..\wand\.svn\text-base;..\..\wand\.svn\tmp;..\..\wand\.svn\tmp\prop-base;..\..\wand\.svn\tmp\props;..\..\wand\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;_MAGICKLIB_;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_DB_wand_.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\wand;..\..\wand\.svn;..\..\wand\.svn\prop-base;..\..\wand\.svn\props;..\..\wand\.svn\text-base;..\..\wand\.svn\tmp;..\..\wand\.svn\tmp\prop-base;..\..\wand\.svn\tmp\props;..\..\wand\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;_MAGICKLIB_;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_DB_wand_.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\wand\animate.c" />
+    <ClCompile Include="..\..\wand\compare.c" />
+    <ClCompile Include="..\..\wand\composite.c" />
+    <ClCompile Include="..\..\wand\conjure.c" />
+    <ClCompile Include="..\..\wand\convert.c" />
+    <ClCompile Include="..\..\wand\deprecate.c" />
+    <ClCompile Include="..\..\wand\display.c" />
+    <ClCompile Include="..\..\wand\drawing-wand.c" />
+    <ClCompile Include="..\..\wand\identify.c" />
+    <ClCompile Include="..\..\wand\import.c" />
+    <ClCompile Include="..\..\wand\magick-image.c" />
+    <ClCompile Include="..\..\wand\magick-property.c" />
+    <ClCompile Include="..\..\wand\magick-wand.c" />
+    <ClCompile Include="..\..\wand\mogrify.c" />
+    <ClCompile Include="..\..\wand\montage.c" />
+    <ClCompile Include="..\..\wand\pixel-iterator.c" />
+    <ClCompile Include="..\..\wand\pixel-wand.c" />
+    <ClCompile Include="..\..\wand\stream.c" />
+    <ClCompile Include="..\..\wand\wand-view.c" />
+    <ClCompile Include="..\..\wand\wand.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wand.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\wand\animate.h" />
+    <ClInclude Include="..\..\wand\compare.h" />
+    <ClInclude Include="..\..\wand\composite.h" />
+    <ClInclude Include="..\..\wand\conjure.h" />
+    <ClInclude Include="..\..\wand\convert.h" />
+    <ClInclude Include="..\..\wand\deprecate.h" />
+    <ClInclude Include="..\..\wand\display.h" />
+    <ClInclude Include="..\..\wand\drawing-wand.h" />
+    <ClInclude Include="..\..\wand\identify.h" />
+    <ClInclude Include="..\..\wand\import.h" />
+    <ClInclude Include="..\..\wand\magick-image.h" />
+    <ClInclude Include="..\..\wand\magick-property.h" />
+    <ClInclude Include="..\..\wand\magick-wand-private.h" />
+    <ClInclude Include="..\..\wand\magick-wand.h" />
+    <ClInclude Include="..\..\wand\MagickWand.h" />
+    <ClInclude Include="..\..\wand\magick_wand.h" />
+    <ClInclude Include="..\..\wand\mogrify-private.h" />
+    <ClInclude Include="..\..\wand\mogrify.h" />
+    <ClInclude Include="..\..\wand\montage.h" />
+    <ClInclude Include="..\..\wand\pixel-iterator.h" />
+    <ClInclude Include="..\..\wand\pixel-wand-private.h" />
+    <ClInclude Include="..\..\wand\pixel-wand.h" />
+    <ClInclude Include="..\..\wand\stream.h" />
+    <ClInclude Include="..\..\wand\studio.h" />
+    <ClInclude Include="..\..\wand\wand-config.h" />
+    <ClInclude Include="..\..\wand\wand-view.h" />
+    <ClInclude Include="..\..\wand\wand.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

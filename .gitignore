@@ -1,0 +1,5 @@
+*.ncrunchsolution
+*.ncrunchsolution.user
+Output
+Debug
+Release

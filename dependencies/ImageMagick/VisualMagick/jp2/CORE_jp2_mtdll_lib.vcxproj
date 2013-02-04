@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_jp2</ProjectName>
+    <ProjectGuid>{A031E7A1-6350-4FC8-9102-94CB4241BF43}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Release\CORE_jp2\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\Release\CORE_jp2\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Output\$(Configuration)\$(Platform)\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Debug\CORE_jp2\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\Debug\CORE_jp2\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\jp2;..\..\jp2\.svn;..\..\jp2\.svn\prop-base;..\..\jp2\.svn\props;..\..\jp2\.svn\text-base;..\..\jp2\.svn\tmp;..\..\jp2\.svn\tmp\prop-base;..\..\jp2\.svn\tmp\props;..\..\jp2\.svn\tmp\text-base;..\..\jp2\src;..\..\jp2\src\.svn;..\..\jp2\src\.svn\prop-base;..\..\jp2\src\.svn\props;..\..\jp2\src\.svn\text-base;..\..\jp2\src\.svn\tmp;..\..\jp2\src\.svn\tmp\prop-base;..\..\jp2\src\.svn\tmp\props;..\..\jp2\src\.svn\tmp\text-base;..\..\jp2\src\appl;..\..\jp2\src\appl\.svn;..\..\jp2\src\appl\.svn\prop-base;..\..\jp2\src\appl\.svn\props;..\..\jp2\src\appl\.svn\text-base;..\..\jp2\src\appl\.svn\tmp;..\..\jp2\src\appl\.svn\tmp\prop-base;..\..\jp2\src\appl\.svn\tmp\props;..\..\jp2\src\appl\.svn\tmp\text-base;..\..\jp2\src\libjasper;..\..\jp2\src\libjasper\.svn;..\..\jp2\src\libjasper\.svn\prop-base;..\..\jp2\src\libjasper\.svn\props;..\..\jp2\src\libjasper\.svn\text-base;..\..\jp2\src\libjasper\.svn\tmp;..\..\jp2\src\libjasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\.svn\tmp\props;..\..\jp2\src\libjasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\base;..\..\jp2\src\libjasper\base\.svn;..\..\jp2\src\libjasper\base\.svn\prop-base;..\..\jp2\src\libjasper\base\.svn\props;..\..\jp2\src\libjasper\base\.svn\text-base;..\..\jp2\src\libjasper\base\.svn\tmp;..\..\jp2\src\libjasper\base\.svn\tmp\prop-base;..\..\jp2\src\libjasper\base\.svn\tmp\props;..\..\jp2\src\libjasper\base\.svn\tmp\text-base;..\..\jp2\src\libjasper\include;..\..\jp2\src\libjasper\include\.svn;..\..\jp2\src\libjasper\include\.svn\prop-base;..\..\jp2\src\libjasper\include\.svn\props;..\..\jp2\src\libjasper\include\.svn\text-base;..\..\jp2\src\libjasper\include\.svn\tmp;..\..\jp2\src\libjasper\include\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\.svn\tmp\props;..\..\jp2\src\libjasper\include\.svn\tmp\text-base;..\..\jp2\src\libjasper\include\jasper;..\..\jp2\src\libjasper\include\jasper\.svn;..\..\jp2\src\libjasper\include\jasper\.svn\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\props;..\..\jp2\src\libjasper\include\jasper\.svn\text-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\props;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\jp2;..\..\jp2\src\libjasper\jp2\.svn;..\..\jp2\src\libjasper\jp2\.svn\prop-base;..\..\jp2\src\libjasper\jp2\.svn\props;..\..\jp2\src\libjasper\jp2\.svn\text-base;..\..\jp2\src\libjasper\jp2\.svn\tmp;..\..\jp2\src\libjasper\jp2\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jp2\.svn\tmp\props;..\..\jp2\src\libjasper\jp2\.svn\tmp\text-base;..\..\jp2\src\libjasper\jpc;..\..\jp2\src\libjasper\jpc\.svn;..\..\jp2\src\libjasper\jpc\.svn\prop-base;..\..\jp2\src\libjasper\jpc\.svn\props;..\..\jp2\src\libjasper\jpc\.svn\text-base;..\..\jp2\src\libjasper\jpc\.svn\tmp;..\..\jp2\src\libjasper\jpc\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jpc\.svn\tmp\props;..\..\jp2\src\libjasper\jpc\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;JAS_WIN_MSVC_BUILD;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_RL_jp2_.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\jp2;..\..\jp2\.svn;..\..\jp2\.svn\prop-base;..\..\jp2\.svn\props;..\..\jp2\.svn\text-base;..\..\jp2\.svn\tmp;..\..\jp2\.svn\tmp\prop-base;..\..\jp2\.svn\tmp\props;..\..\jp2\.svn\tmp\text-base;..\..\jp2\src;..\..\jp2\src\.svn;..\..\jp2\src\.svn\prop-base;..\..\jp2\src\.svn\props;..\..\jp2\src\.svn\text-base;..\..\jp2\src\.svn\tmp;..\..\jp2\src\.svn\tmp\prop-base;..\..\jp2\src\.svn\tmp\props;..\..\jp2\src\.svn\tmp\text-base;..\..\jp2\src\appl;..\..\jp2\src\appl\.svn;..\..\jp2\src\appl\.svn\prop-base;..\..\jp2\src\appl\.svn\props;..\..\jp2\src\appl\.svn\text-base;..\..\jp2\src\appl\.svn\tmp;..\..\jp2\src\appl\.svn\tmp\prop-base;..\..\jp2\src\appl\.svn\tmp\props;..\..\jp2\src\appl\.svn\tmp\text-base;..\..\jp2\src\libjasper;..\..\jp2\src\libjasper\.svn;..\..\jp2\src\libjasper\.svn\prop-base;..\..\jp2\src\libjasper\.svn\props;..\..\jp2\src\libjasper\.svn\text-base;..\..\jp2\src\libjasper\.svn\tmp;..\..\jp2\src\libjasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\.svn\tmp\props;..\..\jp2\src\libjasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\base;..\..\jp2\src\libjasper\base\.svn;..\..\jp2\src\libjasper\base\.svn\prop-base;..\..\jp2\src\libjasper\base\.svn\props;..\..\jp2\src\libjasper\base\.svn\text-base;..\..\jp2\src\libjasper\base\.svn\tmp;..\..\jp2\src\libjasper\base\.svn\tmp\prop-base;..\..\jp2\src\libjasper\base\.svn\tmp\props;..\..\jp2\src\libjasper\base\.svn\tmp\text-base;..\..\jp2\src\libjasper\include;..\..\jp2\src\libjasper\include\.svn;..\..\jp2\src\libjasper\include\.svn\prop-base;..\..\jp2\src\libjasper\include\.svn\props;..\..\jp2\src\libjasper\include\.svn\text-base;..\..\jp2\src\libjasper\include\.svn\tmp;..\..\jp2\src\libjasper\include\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\.svn\tmp\props;..\..\jp2\src\libjasper\include\.svn\tmp\text-base;..\..\jp2\src\libjasper\include\jasper;..\..\jp2\src\libjasper\include\jasper\.svn;..\..\jp2\src\libjasper\include\jasper\.svn\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\props;..\..\jp2\src\libjasper\include\jasper\.svn\text-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\props;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\jp2;..\..\jp2\src\libjasper\jp2\.svn;..\..\jp2\src\libjasper\jp2\.svn\prop-base;..\..\jp2\src\libjasper\jp2\.svn\props;..\..\jp2\src\libjasper\jp2\.svn\text-base;..\..\jp2\src\libjasper\jp2\.svn\tmp;..\..\jp2\src\libjasper\jp2\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jp2\.svn\tmp\props;..\..\jp2\src\libjasper\jp2\.svn\tmp\text-base;..\..\jp2\src\libjasper\jpc;..\..\jp2\src\libjasper\jpc\.svn;..\..\jp2\src\libjasper\jpc\.svn\prop-base;..\..\jp2\src\libjasper\jpc\.svn\props;..\..\jp2\src\libjasper\jpc\.svn\text-base;..\..\jp2\src\libjasper\jpc\.svn\tmp;..\..\jp2\src\libjasper\jpc\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jpc\.svn\tmp\props;..\..\jp2\src\libjasper\jpc\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;JAS_WIN_MSVC_BUILD;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_RL_jp2_.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\jp2;..\..\jp2\.svn;..\..\jp2\.svn\prop-base;..\..\jp2\.svn\props;..\..\jp2\.svn\text-base;..\..\jp2\.svn\tmp;..\..\jp2\.svn\tmp\prop-base;..\..\jp2\.svn\tmp\props;..\..\jp2\.svn\tmp\text-base;..\..\jp2\src;..\..\jp2\src\.svn;..\..\jp2\src\.svn\prop-base;..\..\jp2\src\.svn\props;..\..\jp2\src\.svn\text-base;..\..\jp2\src\.svn\tmp;..\..\jp2\src\.svn\tmp\prop-base;..\..\jp2\src\.svn\tmp\props;..\..\jp2\src\.svn\tmp\text-base;..\..\jp2\src\appl;..\..\jp2\src\appl\.svn;..\..\jp2\src\appl\.svn\prop-base;..\..\jp2\src\appl\.svn\props;..\..\jp2\src\appl\.svn\text-base;..\..\jp2\src\appl\.svn\tmp;..\..\jp2\src\appl\.svn\tmp\prop-base;..\..\jp2\src\appl\.svn\tmp\props;..\..\jp2\src\appl\.svn\tmp\text-base;..\..\jp2\src\libjasper;..\..\jp2\src\libjasper\.svn;..\..\jp2\src\libjasper\.svn\prop-base;..\..\jp2\src\libjasper\.svn\props;..\..\jp2\src\libjasper\.svn\text-base;..\..\jp2\src\libjasper\.svn\tmp;..\..\jp2\src\libjasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\.svn\tmp\props;..\..\jp2\src\libjasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\base;..\..\jp2\src\libjasper\base\.svn;..\..\jp2\src\libjasper\base\.svn\prop-base;..\..\jp2\src\libjasper\base\.svn\props;..\..\jp2\src\libjasper\base\.svn\text-base;..\..\jp2\src\libjasper\base\.svn\tmp;..\..\jp2\src\libjasper\base\.svn\tmp\prop-base;..\..\jp2\src\libjasper\base\.svn\tmp\props;..\..\jp2\src\libjasper\base\.svn\tmp\text-base;..\..\jp2\src\libjasper\include;..\..\jp2\src\libjasper\include\.svn;..\..\jp2\src\libjasper\include\.svn\prop-base;..\..\jp2\src\libjasper\include\.svn\props;..\..\jp2\src\libjasper\include\.svn\text-base;..\..\jp2\src\libjasper\include\.svn\tmp;..\..\jp2\src\libjasper\include\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\.svn\tmp\props;..\..\jp2\src\libjasper\include\.svn\tmp\text-base;..\..\jp2\src\libjasper\include\jasper;..\..\jp2\src\libjasper\include\jasper\.svn;..\..\jp2\src\libjasper\include\jasper\.svn\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\props;..\..\jp2\src\libjasper\include\jasper\.svn\text-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\props;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\jp2;..\..\jp2\src\libjasper\jp2\.svn;..\..\jp2\src\libjasper\jp2\.svn\prop-base;..\..\jp2\src\libjasper\jp2\.svn\props;..\..\jp2\src\libjasper\jp2\.svn\text-base;..\..\jp2\src\libjasper\jp2\.svn\tmp;..\..\jp2\src\libjasper\jp2\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jp2\.svn\tmp\props;..\..\jp2\src\libjasper\jp2\.svn\tmp\text-base;..\..\jp2\src\libjasper\jpc;..\..\jp2\src\libjasper\jpc\.svn;..\..\jp2\src\libjasper\jpc\.svn\prop-base;..\..\jp2\src\libjasper\jpc\.svn\props;..\..\jp2\src\libjasper\jpc\.svn\text-base;..\..\jp2\src\libjasper\jpc\.svn\tmp;..\..\jp2\src\libjasper\jpc\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jpc\.svn\tmp\props;..\..\jp2\src\libjasper\jpc\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;JAS_WIN_MSVC_BUILD;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_DB_jp2_.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\xlib;..\..\Magick++\lib;..\..\zlib;..\..\zlib\.svn;..\..\zlib\.svn\prop-base;..\..\zlib\.svn\props;..\..\zlib\.svn\text-base;..\..\zlib\.svn\tmp;..\..\zlib\.svn\tmp\prop-base;..\..\zlib\.svn\tmp\props;..\..\zlib\.svn\tmp\text-base;..\..\bzlib;..\..\bzlib\.svn;..\..\bzlib\.svn\prop-base;..\..\bzlib\.svn\props;..\..\bzlib\.svn\text-base;..\..\bzlib\.svn\tmp;..\..\bzlib\.svn\tmp\prop-base;..\..\bzlib\.svn\tmp\props;..\..\bzlib\.svn\tmp\text-base;..\..\jpeg;..\..\jpeg\.svn;..\..\jpeg\.svn\prop-base;..\..\jpeg\.svn\props;..\..\jpeg\.svn\text-base;..\..\jpeg\.svn\tmp;..\..\jpeg\.svn\tmp\prop-base;..\..\jpeg\.svn\tmp\props;..\..\jpeg\.svn\tmp\text-base;..\..\lcms\src;..\..\lcms\src\.svn;..\..\lcms\src\.svn\prop-base;..\..\lcms\src\.svn\props;..\..\lcms\src\.svn\text-base;..\..\lcms\src\.svn\tmp;..\..\lcms\src\.svn\tmp\prop-base;..\..\lcms\src\.svn\tmp\props;..\..\lcms\src\.svn\tmp\text-base;..\..\lcms\include;..\..\lcms\include\.svn;..\..\lcms\include\.svn\prop-base;..\..\lcms\include\.svn\props;..\..\lcms\include\.svn\text-base;..\..\lcms\include\.svn\tmp;..\..\lcms\include\.svn\tmp\prop-base;..\..\lcms\include\.svn\tmp\props;..\..\lcms\include\.svn\tmp\text-base;..\..\tiff\libtiff;..\..\tiff\libtiff\.svn;..\..\tiff\libtiff\.svn\prop-base;..\..\tiff\libtiff\.svn\props;..\..\tiff\libtiff\.svn\text-base;..\..\tiff\libtiff\.svn\tmp;..\..\tiff\libtiff\.svn\tmp\prop-base;..\..\tiff\libtiff\.svn\tmp\props;..\..\tiff\libtiff\.svn\tmp\text-base;..\..\ttf\include;..\..\ttf\include\.svn;..\..\ttf\include\.svn\prop-base;..\..\ttf\include\.svn\props;..\..\ttf\include\.svn\text-base;..\..\ttf\include\.svn\tmp;..\..\ttf\include\.svn\tmp\prop-base;..\..\ttf\include\.svn\tmp\props;..\..\ttf\include\.svn\tmp\text-base;..\..\ttf\include\freetype;..\..\ttf\include\freetype\.svn;..\..\ttf\include\freetype\.svn\prop-base;..\..\ttf\include\freetype\.svn\props;..\..\ttf\include\freetype\.svn\text-base;..\..\ttf\include\freetype\.svn\tmp;..\..\ttf\include\freetype\.svn\tmp\prop-base;..\..\ttf\include\freetype\.svn\tmp\props;..\..\ttf\include\freetype\.svn\tmp\text-base;..\..\ttf\include\freetype\cache;..\..\ttf\include\freetype\cache\.svn;..\..\ttf\include\freetype\cache\.svn\prop-base;..\..\ttf\include\freetype\cache\.svn\props;..\..\ttf\include\freetype\cache\.svn\text-base;..\..\ttf\include\freetype\cache\.svn\tmp;..\..\ttf\include\freetype\cache\.svn\tmp\prop-base;..\..\ttf\include\freetype\cache\.svn\tmp\props;..\..\ttf\include\freetype\cache\.svn\tmp\text-base;..\..\ttf\include\freetype\config;..\..\ttf\include\freetype\config\.svn;..\..\ttf\include\freetype\config\.svn\prop-base;..\..\ttf\include\freetype\config\.svn\props;..\..\ttf\include\freetype\config\.svn\text-base;..\..\ttf\include\freetype\config\.svn\tmp;..\..\ttf\include\freetype\config\.svn\tmp\prop-base;..\..\ttf\include\freetype\config\.svn\tmp\props;..\..\ttf\include\freetype\config\.svn\tmp\text-base;..\..\ttf\include\freetype\internal;..\..\ttf\include\freetype\internal\.svn;..\..\ttf\include\freetype\internal\.svn\prop-base;..\..\ttf\include\freetype\internal\.svn\props;..\..\ttf\include\freetype\internal\.svn\text-base;..\..\ttf\include\freetype\internal\.svn\tmp;..\..\ttf\include\freetype\internal\.svn\tmp\prop-base;..\..\ttf\include\freetype\internal\.svn\tmp\props;..\..\ttf\include\freetype\internal\.svn\tmp\text-base;..\..\libxml\include;..\..\libxml\include\.svn;..\..\libxml\include\.svn\prop-base;..\..\libxml\include\.svn\props;..\..\libxml\include\.svn\text-base;..\..\libxml\include\.svn\tmp;..\..\libxml\include\.svn\tmp\prop-base;..\..\libxml\include\.svn\tmp\props;..\..\libxml\include\.svn\tmp\text-base;..\..\libxml\include\libxml;..\..\libxml\include\libxml\.svn;..\..\libxml\include\libxml\.svn\prop-base;..\..\libxml\include\libxml\.svn\props;..\..\libxml\include\libxml\.svn\text-base;..\..\libxml\include\libxml\.svn\tmp;..\..\libxml\include\libxml\.svn\tmp\prop-base;..\..\libxml\include\libxml\.svn\tmp\props;..\..\libxml\include\libxml\.svn\tmp\text-base;..\..\jp2;..\..\jp2\.svn;..\..\jp2\.svn\prop-base;..\..\jp2\.svn\props;..\..\jp2\.svn\text-base;..\..\jp2\.svn\tmp;..\..\jp2\.svn\tmp\prop-base;..\..\jp2\.svn\tmp\props;..\..\jp2\.svn\tmp\text-base;..\..\jp2\src;..\..\jp2\src\.svn;..\..\jp2\src\.svn\prop-base;..\..\jp2\src\.svn\props;..\..\jp2\src\.svn\text-base;..\..\jp2\src\.svn\tmp;..\..\jp2\src\.svn\tmp\prop-base;..\..\jp2\src\.svn\tmp\props;..\..\jp2\src\.svn\tmp\text-base;..\..\jp2\src\appl;..\..\jp2\src\appl\.svn;..\..\jp2\src\appl\.svn\prop-base;..\..\jp2\src\appl\.svn\props;..\..\jp2\src\appl\.svn\text-base;..\..\jp2\src\appl\.svn\tmp;..\..\jp2\src\appl\.svn\tmp\prop-base;..\..\jp2\src\appl\.svn\tmp\props;..\..\jp2\src\appl\.svn\tmp\text-base;..\..\jp2\src\libjasper;..\..\jp2\src\libjasper\.svn;..\..\jp2\src\libjasper\.svn\prop-base;..\..\jp2\src\libjasper\.svn\props;..\..\jp2\src\libjasper\.svn\text-base;..\..\jp2\src\libjasper\.svn\tmp;..\..\jp2\src\libjasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\.svn\tmp\props;..\..\jp2\src\libjasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\base;..\..\jp2\src\libjasper\base\.svn;..\..\jp2\src\libjasper\base\.svn\prop-base;..\..\jp2\src\libjasper\base\.svn\props;..\..\jp2\src\libjasper\base\.svn\text-base;..\..\jp2\src\libjasper\base\.svn\tmp;..\..\jp2\src\libjasper\base\.svn\tmp\prop-base;..\..\jp2\src\libjasper\base\.svn\tmp\props;..\..\jp2\src\libjasper\base\.svn\tmp\text-base;..\..\jp2\src\libjasper\include;..\..\jp2\src\libjasper\include\.svn;..\..\jp2\src\libjasper\include\.svn\prop-base;..\..\jp2\src\libjasper\include\.svn\props;..\..\jp2\src\libjasper\include\.svn\text-base;..\..\jp2\src\libjasper\include\.svn\tmp;..\..\jp2\src\libjasper\include\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\.svn\tmp\props;..\..\jp2\src\libjasper\include\.svn\tmp\text-base;..\..\jp2\src\libjasper\include\jasper;..\..\jp2\src\libjasper\include\jasper\.svn;..\..\jp2\src\libjasper\include\jasper\.svn\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\props;..\..\jp2\src\libjasper\include\jasper\.svn\text-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\prop-base;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\props;..\..\jp2\src\libjasper\include\jasper\.svn\tmp\text-base;..\..\jp2\src\libjasper\jp2;..\..\jp2\src\libjasper\jp2\.svn;..\..\jp2\src\libjasper\jp2\.svn\prop-base;..\..\jp2\src\libjasper\jp2\.svn\props;..\..\jp2\src\libjasper\jp2\.svn\text-base;..\..\jp2\src\libjasper\jp2\.svn\tmp;..\..\jp2\src\libjasper\jp2\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jp2\.svn\tmp\props;..\..\jp2\src\libjasper\jp2\.svn\tmp\text-base;..\..\jp2\src\libjasper\jpc;..\..\jp2\src\libjasper\jpc\.svn;..\..\jp2\src\libjasper\jpc\.svn\prop-base;..\..\jp2\src\libjasper\jpc\.svn\props;..\..\jp2\src\libjasper\jpc\.svn\text-base;..\..\jp2\src\libjasper\jpc\.svn\tmp;..\..\jp2\src\libjasper\jpc\.svn\tmp\prop-base;..\..\jp2\src\libjasper\jpc\.svn\tmp\props;..\..\jp2\src\libjasper\jpc\.svn\tmp\text-base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;JAS_WIN_MSVC_BUILD;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)CORE_DB_jp2_.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_cm.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_debug.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_getopt.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_icc.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_iccdata.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_image.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_init.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_malloc.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_seq.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_stream.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_string.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_tmr.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_tvp.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\base\jas_version.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jp2\jp2_cod.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jp2\jp2_dec.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jp2\jp2_enc.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_bs.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_cs.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_dec.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_enc.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_math.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_mct.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_mqcod.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_mqdec.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_mqenc.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_qmfb.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_t1cod.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_t1dec.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_t1enc.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_t2cod.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_t2dec.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_t2enc.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_tagtree.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_tsfb.c" />
+    <ClCompile Include="..\..\jp2\src\libjasper\jpc\jpc_util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\jp2\jasper.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jasper.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_cm.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_config.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_config2.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_debug.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_fix.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_getopt.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_icc.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_image.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_init.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_malloc.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_math.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_seq.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_stream.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_string.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_tmr.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_tvp.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_types.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\include\jasper\jas_version.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jp2\jp2_cod.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jp2\jp2_dec.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_bs.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_cod.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_cs.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_dec.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_enc.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_fix.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_flt.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_math.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_mct.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_mqcod.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_mqdec.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_mqenc.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_qmfb.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_t1cod.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_t1dec.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_t1enc.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_t2cod.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_t2dec.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_t2enc.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_tagtree.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_tsfb.h" />
+    <ClInclude Include="..\..\jp2\src\libjasper\jpc\jpc_util.h" />
+    <ClInclude Include="..\..\jp2\acconfig.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
