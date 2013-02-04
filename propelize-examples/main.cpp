@@ -10,6 +10,7 @@ namespace cn = concurrency;
 int main(int argc, char **argv)
 {
 	Magick::Image image("test.bmp");
+	image.write("test_images/test.png");
 	
 	cn::array<uint32_t, 2> amp_buffer(1, 1);
 	pags::ConvertFromMagickImage(image, amp_buffer);
@@ -34,26 +35,26 @@ int main(int argc, char **argv)
 	erosion(amp_buffer, amp_output);
 	dilation(amp_output, amp_buffer);
 	output = pags::ConvertToMagickImage(amp_buffer);
-	output.write("test.output.opening.bmp");
+	output.write("test_images/test.output.opening.png");
 
 	
 	pags::ConvertFromMagickImage(image, amp_buffer);
 	dilation(amp_buffer, amp_output);
 	erosion(amp_output, amp_buffer);
 	output = pags::ConvertToMagickImage(amp_buffer);
-	output.write("test.output.closing.bmp");
+	output.write("test_images/test.output.closing.png");
 
 
 	pags::ConvertFromMagickImage(image, amp_buffer);
 	erosion(amp_buffer, amp_output);
 	output = pags::ConvertToMagickImage(amp_output);
-	output.write("test.output.erosion.bmp");
+	output.write("test_images/test.output.erosion.png");
 
 
 	pags::ConvertFromMagickImage(image, amp_buffer);
 	dilation(amp_buffer, amp_output);
 	output = pags::ConvertToMagickImage(amp_output);
-	output.write("test.output.dilation.bmp");
+	output.write("test_images/test.output.dilation.png");
 
 	return 0;
 }
