@@ -15,6 +15,7 @@ namespace propelize { namespace algorithms { namespace gpu {
 
 	class PROPELIZE_API Dilation
 	{
+	public:
 		Dilation(concurrency::array<uint32_t, 2> &kernel) :
 			_kernel(kernel)
 		{

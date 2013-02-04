@@ -11,10 +11,10 @@ namespace propelize { namespace algorithms { namespace gpu {
 	{
 		static const char *func = "Dilation::()";
 
-		int filterXMid = _kernel.extent[0] / 2;
-		int filterYMid = _kernel.extent[1] / 2;
-		int maxX = image.extent[1] - filterXMid;
+		int filterYMid = _kernel.extent[0] / 2;
+		int filterXMid = _kernel.extent[1] / 2;
 		int maxY = image.extent[0] - filterYMid;
+		int maxX = image.extent[1] - filterXMid;
 
 		// these can be negative for very small images.
 		if (maxX < 0 || maxY < 0)
@@ -23,10 +23,12 @@ namespace propelize { namespace algorithms { namespace gpu {
 		}
 		else
 		{
+			cn::array<uint32_t, 2> &kernel = _kernel;
+
 			cn::parallel_for_each(
 				image.accelerator_view,
 				image.extent,
-				[=, &image, &output](cn::index<2> idx) restrict(amp)
+				[=, &image, &kernel, &output](cn::index<2> idx) restrict(amp)
 				{
 					int r = static_cast<int>(idx[0]);
 					int c = static_cast<int>(idx[1]);
@@ -45,10 +47,10 @@ namespace propelize { namespace algorithms { namespace gpu {
 						uint32_t maxRed = 0, maxGrn = 0, maxBlu = 0, maxAlpha = 0;
 
 						// apply the filter to a local region
-						for (int y = 0; y < _kernel.extent[0]; ++y)
-						for (int x = 0; x < _kernel.extent[1]; ++x)
+						for (int y = 0; y < kernel.extent[0]; ++y)
+						for (int x = 0; x < kernel.extent[1]; ++x)
 						{
-							if (_kernel(y, x) == 0) continue;
+							if (kernel(y, x) == 0) continue;
 
 							int dx = -filterXMid + x;
 							int dy = -filterYMid + y;
@@ -63,6 +65,12 @@ namespace propelize { namespace algorithms { namespace gpu {
 							maxGrn = max(grn, maxGrn);
 							maxBlu = max(blu, maxBlu);
 							maxAlpha = max(alpha, maxAlpha);
+						}
+
+						if (maxRed > 0 || maxGrn > 0 || maxBlu > 0 || maxAlpha > 0)
+						{
+							int a = 3;
+							a++;
 						}
 
 						output[idx] = BUILD_RGBA(maxRed, maxGrn, maxBlu, maxAlpha);

@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "propelize", "propelize.vcxproj", "{63315F5D-80D2-4160-833E-6E959AC2D586}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "propelize-examples", "propelize-examples\propelize-examples.vcxproj", "{FF9E1CF7-05E8-4D91-9A23-9CF0AA5761A4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63315F5D-80D2-4160-833E-6E959AC2D586} = {63315F5D-80D2-4160-833E-6E959AC2D586}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
